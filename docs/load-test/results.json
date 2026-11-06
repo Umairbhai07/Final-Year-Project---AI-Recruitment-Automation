@@ -1,0 +1,185 @@
+{
+  "title": "Local test: FastAPI with 4 workers and PostgreSQL on one 4-core machine",
+  "steps": [
+    {
+      "users": 50,
+      "seconds": 62.8,
+      "requests": 1185,
+      "per_second": 18.9,
+      "errors": 0,
+      "error_rate": 0.0,
+      "error_codes": {},
+      "p50_ms": 9,
+      "p95_ms": 22,
+      "p99_ms": 87,
+      "mean_ms": 13,
+      "by_request": {
+        "job list": {
+          "count": 365,
+          "p50_ms": 11,
+          "p95_ms": 15
+        },
+        "my applications": {
+          "count": 158,
+          "p50_ms": 7,
+          "p95_ms": 10
+        },
+        "my profile": {
+          "count": 151,
+          "p50_ms": 7,
+          "p95_ms": 11
+        },
+        "open a job": {
+          "count": 297,
+          "p50_ms": 10,
+          "p95_ms": 14
+        },
+        "qualify check": {
+          "count": 164,
+          "p50_ms": 8,
+          "p95_ms": 13
+        },
+        "sign in": {
+          "count": 50,
+          "p50_ms": 84,
+          "p95_ms": 112
+        }
+      }
+    },
+    {
+      "users": 100,
+      "seconds": 62.9,
+      "requests": 2375,
+      "per_second": 37.8,
+      "errors": 0,
+      "error_rate": 0.0,
+      "error_codes": {},
+      "p50_ms": 9,
+      "p95_ms": 24,
+      "p99_ms": 86,
+      "mean_ms": 13,
+      "by_request": {
+        "job list": {
+          "count": 737,
+          "p50_ms": 10,
+          "p95_ms": 18
+        },
+        "my applications": {
+          "count": 325,
+          "p50_ms": 7,
+          "p95_ms": 14
+        },
+        "my profile": {
+          "count": 329,
+          "p50_ms": 7,
+          "p95_ms": 14
+        },
+        "open a job": {
+          "count": 557,
+          "p50_ms": 10,
+          "p95_ms": 16
+        },
+        "qualify check": {
+          "count": 327,
+          "p50_ms": 8,
+          "p95_ms": 16
+        },
+        "sign in": {
+          "count": 100,
+          "p50_ms": 83,
+          "p95_ms": 91
+        }
+      }
+    },
+    {
+      "users": 250,
+      "seconds": 62.9,
+      "requests": 5948,
+      "per_second": 94.5,
+      "errors": 0,
+      "error_rate": 0.0,
+      "error_codes": {},
+      "p50_ms": 8,
+      "p95_ms": 19,
+      "p99_ms": 83,
+      "mean_ms": 12,
+      "by_request": {
+        "job list": {
+          "count": 1887,
+          "p50_ms": 9,
+          "p95_ms": 16
+        },
+        "my applications": {
+          "count": 872,
+          "p50_ms": 6,
+          "p95_ms": 11
+        },
+        "my profile": {
+          "count": 795,
+          "p50_ms": 6,
+          "p95_ms": 11
+        },
+        "open a job": {
+          "count": 1360,
+          "p50_ms": 9,
+          "p95_ms": 14
+        },
+        "qualify check": {
+          "count": 784,
+          "p50_ms": 7,
+          "p95_ms": 13
+        },
+        "sign in": {
+          "count": 250,
+          "p50_ms": 80,
+          "p95_ms": 90
+        }
+      }
+    },
+    {
+      "users": 500,
+      "seconds": 62.9,
+      "requests": 11912,
+      "per_second": 189.4,
+      "errors": 0,
+      "error_rate": 0.0,
+      "error_codes": {},
+      "p50_ms": 11,
+      "p95_ms": 43,
+      "p99_ms": 103,
+      "mean_ms": 16,
+      "by_request": {
+        "job list": {
+          "count": 3858,
+          "p50_ms": 12,
+          "p95_ms": 29
+        },
+        "my applications": {
+          "count": 1621,
+          "p50_ms": 8,
+          "p95_ms": 22
+        },
+        "my profile": {
+          "count": 1663,
+          "p50_ms": 8,
+          "p95_ms": 24
+        },
+        "open a job": {
+          "count": 2701,
+          "p50_ms": 12,
+          "p95_ms": 31
+        },
+        "qualify check": {
+          "count": 1569,
+          "p50_ms": 9,
+          "p95_ms": 26
+        },
+        "sign in": {
+          "count": 500,
+          "p50_ms": 88,
+          "p95_ms": 139
+        }
+      }
+    }
+  ]
+}
