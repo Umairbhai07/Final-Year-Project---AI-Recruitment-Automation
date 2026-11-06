@@ -1,0 +1,7 @@
+-r requirements.txt
+pytest==8.3.4
+pytest-cov==6.0.0
+ruff==0.8.3
+black==24.10.0
+aiohttp>=3.9  # load test client (scripts/load_test.py)
+matplotlib>=3.8  # load test charts
