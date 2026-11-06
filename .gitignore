@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+# secrets & local data
+.env
+backend/storage/
+# Node
+node_modules/
+web/dist/
+web/.env
+web/.env.local
+.vercel
+backend/.seeded
+backend/*.db
+backend/seed.log
+web/public/mediapipe/wasm/
