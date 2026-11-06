@@ -1,0 +1,17 @@
+# backend/.env IS uploaded on purpose: the live backend reads its settings from it.
+# Backups and other env files stay on this computer.
+.env.*
+!.env.example
+.venv
+venv
+__pycache__
+*.pyc
+storage
+*.db
+.seeded
+seed.log
+tests
+.pytest_cache
+.ruff_cache
+# tool settings only (ruff/black/pytest); Vercel would try to read it as the package list
+pyproject.toml

@@ -1,0 +1,49 @@
+# Render Blueprint: deploys the backend as a Docker web service (free plan).
+# Set the secret values (marked sync: false) in the Render dashboard.
+services:
+  - type: web
+    name: ai-recruiter-api
+    runtime: docker
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false   # Supabase pooled connection string, postgresql+psycopg://...
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CORS_ORIGINS
+        sync: false   # your Vercel URL, e.g. https://ai-recruiter.vercel.app
+      - key: FRONTEND_URL
+        sync: false   # same Vercel URL (used in email links)
+      - key: LLM_BASE_URL
+        value: https://api.groq.com/openai/v1
+      - key: LLM_API_KEY
+        sync: false
+      - key: LLM_MODEL
+        value: llama-3.3-70b-versatile
+      - key: STT_BASE_URL
+        value: https://api.groq.com/openai/v1
+      - key: STT_API_KEY
+        sync: false
+      - key: STT_MODEL
+        value: whisper-large-v3
+      - key: AI_MOCK
+        value: "false"
+      - key: STORAGE_BACKEND
+        value: supabase
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_KEY
+        sync: false
+      - key: SUPABASE_BUCKET
+        value: recruiter-files
+      - key: EMAIL_BACKEND
+        value: console   # change to resend once RESEND_API_KEY is set
+      - key: RESEND_API_KEY
+        sync: false
+      - key: EMAIL_FROM
+        value: onboarding@resend.dev
